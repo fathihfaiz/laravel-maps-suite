@@ -13,8 +13,8 @@ composer require fathihfaiz/laravel-maps-suite
 ### Publish Configuration and Views
 
 ```bash
-php artisan vendor:publish --tag=mapsuite-config
-php artisan vendor:publish --tag=mapsuite-views
+php artisan vendor:publish --tag=config
+php artisan vendor:publish --tag=views
 ```
 
 ---
