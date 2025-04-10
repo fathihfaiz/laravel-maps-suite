@@ -25,12 +25,12 @@ class MapsSuiteServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__ . '/../config/mapsuite.php' => config_path('mapsuite.php'),
-            ], 'config');
+            ], 'maps-config');
 
             // Publishing the views.
             $this->publishes([
                 __DIR__ . '/../resources/views/components' => resource_path('views/vendor/maps/components'),
-            ], 'views');
+            ], 'maps-views');
         }
         $this->loadViewComponentsAs('maps', [
             Leaflet::class,
